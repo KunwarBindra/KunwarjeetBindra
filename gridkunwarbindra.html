@@ -1,0 +1,658 @@
+<html>
+   <head>
+      <title>Kunwarjeet Singh Bindra</title>
+	  <link rel="stylesheet" href="css/all.css"> 
+	  <style> 
+	     body{
+		      background:#000033;
+			  margin: 0;
+			  padding: 0;
+		          height:100%;
+		}
+		#wrapper{
+		          width:100%;
+			  margin: 0 auto;
+			  min-height:100%;
+			    grid-template-columns: repeat(1, 1fr);
+				grid-template-rows:repeat(4, 100%); 
+				grid-template-areas: "one"
+				                     "two"
+									 "three"
+									 "four";
+		}
+		#one{
+		    grid-area:one;
+			}
+		#header1{
+		      background:white;
+			  color:#000033;
+			  padding-top:2px;
+			  padding-bottom:10px;
+			  text-align:center;
+			  padding-left:40px;
+			  font-family: 'Arvo', serif;
+			  font-size:30px;
+			  min-height:50px;
+		}
+		
+		#intro{
+		      min-width:60%;
+			  min-height:300px;
+			  max-height:600px;
+			  padding-top:50px;
+			  padding-left:50px;
+			  padding-bottom:50px;
+			  padding-right:50px;
+			  border:2px solid white;
+			  text-align:center;
+			  color:white;
+			  font-family:arial;
+			  font-size:20px;
+			  margin:5% 15% 10% 15%;
+			  box-shadow: 15px 15px 20px 0px grey;
+	    }
+		#intro a{
+		        color:white;
+		}
+		.box{
+		    width:240px;
+			height:300px;
+			float:left;
+			margin-right:30px;
+			overflow:hidden;
+			position:relative;
+		}
+			
+		.box img{
+		        width:100%;
+				height:auto;
+		}
+		.content{
+		        color:black;
+				background: rgba(255,255,255,0.8);
+				position:absolute;
+				top: 0;
+				left: -100%;
+				width: 100%;
+				height: 100%;
+				font-size:30px;
+				text-align:center;
+				padding:50px;
+				box-sizing: border-box;
+				transition: all 0.5s;
+		}
+		.box:hover .content{
+		left:0;
+		}
+		#two{
+		    grid-area:two;
+			}
+		#header2{
+		      background:white;
+			  color:#000033;
+			  padding-top:2px;
+			  padding-bottom:10px;
+			  padding-left:30px;
+			  text-align:center;
+			  font-family: 'Arvo', serif;
+			  font-size:30px;
+			  min-height:50px;
+		}
+		  #about{
+		      color:white;
+			  width:50%;
+		      text-align:center;
+			  font-family:arial;
+			  font-size:20px;
+			  margin-top:10%;
+			  margin-left:25%;
+			  margin-right:25%;
+			  border-bottom:1px solid white;
+		}
+		#footer1 a{
+		        color:white;
+		}
+		#footer1 ul{
+		        list-style:none;
+				padding:0;
+		}
+		#footer1 ul li{
+		           display:inline-block;
+				   margin: 10px;
+		}
+		#footer1 ul li a{
+		              font-size:30px;
+		}
+		#footer1{
+				text-align:center;
+				margin-bottom:10%;
+		}
+		#three{
+		      grid-area:three;
+			  }
+		#header3{
+		      background:white;
+			  color:#000033;
+			  padding-top:2px;
+			  padding-bottom:10px;
+			  padding-left:30px;
+			  text-align:center;
+			  font-family: 'Arvo', serif;
+			  font-size:30px;
+			  min-height:50px;
+		}
+		  #resume{
+		      color:white;
+		      padding-left:30px;
+			  margin-top:3%;
+			  margin-bottom:3%;
+			  list-style:none;
+		}
+		#resume a{
+			color:white;
+		}
+		#four{
+		     grid-area:four;
+			 }
+		 #header4{
+		      background:white;
+			  text-align:center;
+			  color:#000033;
+			  padding-top:2px;
+			  padding-bottom:10px;
+			  padding-left:30px;
+			  font-family: 'Arvo', serif;
+			  font-size:30px;
+			  min-height:50px;
+		      }
+	     #box1{
+		      width:50%;
+			  height:auto;
+			  padding:70px 0;
+			  text-align:center;
+			  margin:5% 25% 2.5% 25%;
+			  overflow:hidden;
+			  border-radius:20px;
+			  position:relative;
+			  }
+		  #box1 img{
+               width:100%;
+			   border-radius:20px;
+              }
+			  .content1{
+		        color:#fff;
+				background: rgba(0,0,0,0.8);
+				position:absolute;
+				top: 0%;
+				left: -100%;
+				width: 100%;
+				height: 100%;
+				font-size:30px;
+				text-align:center;
+				border-radius:20px;
+				padding:50px;
+				box-sizing: border-box;
+				transition: all 2s;
+		      }
+			  #box1:hover .content1{
+			                        left: 0%;
+		      }
+		 #box2{
+		      width:50%;
+			  height:auto;
+			  padding:70px 0;
+			  text-align:center;
+			  margin:2.5% 25% 2.5% 25%;
+			  overflow:hidden;
+			  border-radius:20px;
+			  position:relative;
+			  }  
+		  #box2 img{
+               width:100%;
+			   border-radius:20px;
+              }
+			  .content2{
+		        color:#fff;
+				background: rgba(0,0,0,0.8);
+				position:absolute;
+				border-radius:20px;
+				top: 0%;
+				left: -100%;
+				width: 100%;
+				height: 100%;
+				font-size:30px;
+				text-align:center;
+				padding:50px;
+				box-sizing: border-box;
+				transition: all 2s;
+		      }
+			  #box2:hover .content2{
+			                       left: 0%;
+		      }
+		 #box3{
+		      width:50%;
+			  height:auto;
+			  padding:70px 0;
+			  text-align:center;
+			  margin:2.5% 25% 2.5% 25%;
+			  overflow:hidden;
+			  border-radius:20px;
+			  position:relative;
+			  }	
+          #box3 img{
+               width:100%;
+			   border-radius:20px;
+              }	
+              .content3{
+		        color:#fff;
+				background: rgba(0,0,0,0.8);
+				position:absolute;
+				border-radius:20px;
+				top: 0%;
+				left: -100%;
+				width: 100%;
+				height: 100%;
+				font-size:30px;
+				text-align:center;
+				padding:50px;
+				box-sizing: border-box;
+				transition: all 2s;
+		      }
+              #box3:hover .content3{
+			                        left: 0%;
+		      }			  
+         #box4{
+		      width:50%;
+			  height:auto;
+			  padding:70px 0;
+			  text-align:center;
+			  margin:2.5% 25% 5% 25%;
+			  overflow:hidden;
+			  border-radius:20px;
+			  position:relative;
+			  }	
+          #box4 img{
+               width:100%;
+			   border-radius:20px;
+              }
+			  .content4{
+		        color:#fff;
+				background: rgba(0,0,0,0.8);
+				position:absolute;
+				border-radius:20px;
+				top: 0%;
+				left: -100%;
+				width: 100%;
+				height: 100%;
+				font-size:30px;
+				text-align:center;
+				padding:50px;
+				box-sizing: border-box;
+				transition: all 2s;
+		      }
+              #box4:hover .content4{
+			                        left: 0%;
+		      }	
+		#footer a{
+		        color:#000033;
+		}
+		#footer ul{
+		        list-style:none;
+				padding:0;
+		}
+		#footer ul li{
+		           display:inline-block;
+				   margin: 10px;
+		}
+		#footer ul li a{
+		              font-size:30px;
+		}
+		#footer{
+		           background:white;
+			        position:relative;
+			        height:100px;
+			        clear:both;
+				padding: 10px 10px;
+				text-align:center;
+		}
+		@media screen and (max-width: 1440px){
+		#wrapper{
+		       width: auto;
+		}
+		#header1{
+		       text-align:center;
+			   padding-left:0;
+		}
+		#intro{
+		       min-width:60%;
+			   min-height:300px;
+			   max-height:1000px;
+		}
+		#intro a{
+		        color:white;
+		}
+		 .box{
+		       float:none;
+			
+			text-align:center;
+			margin-right:auto;
+			margin-left:auto;
+			margin-bottom:20px;
+		}
+		#header2{
+		       text-align:center;
+			   padding-left:0;
+		}
+		#about{
+		       width:50%;
+		}
+		#header3{
+		       text-align:center;
+			   padding-left:0;
+		}
+		#resume{
+		       width:90%;
+		}
+		#header4{
+		       text-align:center;
+			padding-left:0;
+		} 
+		#box1{
+		     width:50%;
+		}
+        #box2{
+		     width:50%;
+		}
+        #box3{
+		     width:50%;
+		}
+        #box4{
+		     width:50%;
+		}
+		}
+	   	@media screen and (max-width: 1080px){
+		body{
+		    background: black;
+		     height:100%;
+		} 
+		#wrapper{
+		       width: auto;
+			min-height:100%;
+		}
+		#header1{
+		       background:white;
+			padding-top:6px;
+			padding-bottom:20px;
+			color:black;
+		       text-align:center;
+			padding-left:0;
+		}
+		#intro{
+		       min-width:60%;
+			   color:white;
+			   border:2px none white;
+			   min-height:300px;
+			   max-height:1100px;
+			   margin:20% 15% 10% 15%;
+			   font-size:30px;
+			   padding-left:0;
+			   padding-right:0;
+			   box-shadow: 0 0 0 0 grey;
+		}
+		#intro a{
+		        color:white;
+			font-size:40px;
+		} 
+		 .box{
+		    float:none;
+			width:70%;
+			height:auto;
+			text-align:center;
+			margin-right:auto;
+			margin-left:auto;
+			margin-bottom:20px;
+		}
+		.content{
+			padding:100px;
+			}
+		#header2{
+		       background:white;
+			   color:black;
+		       text-align:center;
+			   padding-left:0;
+		}
+		#about{
+		       width:90%;
+			   color:white;
+			   margin-left:5%;
+			   margin-right:5%;
+			   margin-bottom:5%;
+			   padding-bottom:50px;
+			   text-align:center;
+			   font-size:20px;
+			   border-bottom:1px solid white;
+		}
+		#footer1 ul li{
+			     margin:15px;
+		}
+		#footer1 ul li a{
+		        color:white;
+			font-size:50px;
+		}
+		#header3{
+		       background:white;
+			padding-top:6px;
+			padding-bottom:20px;
+			  color:black;
+		       text-align:center;
+			   padding-left:0;
+		}
+		#resume{
+		       width:95%;
+			   color:white;
+			   margin-top:7%;
+			   margin-bottom:7%;
+			   margin-left:2.5%;
+			   margin-right:2.5%;
+			   text-align:center;
+			   padding-left:0;
+		}
+	        #resume a{
+			color:white;
+		}
+		#header4{
+		       background:white;
+			   color:black;
+			padding-top:6px;
+			padding-bottom:20px;
+		       text-align:center;
+			   padding-left:0;
+		}
+		#box1{
+		     width:90%;
+			 margin: 20% 5% 0 5%;
+			 border-bottom:2px solid white;
+			 border-radius:20px 20px 0px 0px;
+		}
+		#box1 img{
+			 box-shadow: 15px 15px 20px 0 grey;
+			 width:90%;
+			 margin-left:auto;
+			 margin-right:auto;
+			}
+        #box2{
+		     width:90%;
+			 margin: 0 5% 0 5%;
+			 border-bottom:2px solid white;
+			 border-radius:20px 20px 0px 0px;
+		}
+		#box2 img{
+			 box-shadow: 15px 15px 20px 0 grey;
+			 width:90%;
+			 margin-left:auto;
+			 margin-right:auto;
+			}
+        #box3{
+		     width:90%;
+			 margin: 0 5% 0 5%;
+			 border-bottom:2px solid white;
+			 border-radius:20px 20px 0px 0px;
+		}
+		#box3 img{
+			 box-shadow:15px 15px 20px 0 grey;
+			 width:90%;
+			 margin-left:auto;
+			 margin-right:auto;
+			}
+        #box4{
+		     width:90%;
+			 margin: 0 5% 5% 5%;
+			 border-bottom:2px none white;
+			 border-radius:20px 20px 0px 0px;
+		}
+		#box4 img{
+			 box-shadow: 15px 15px 20px 0 grey;
+			 width:90%;
+			 margin-left:auto;
+			 margin-right:auto;
+			}
+		#footer{
+		        background:white;
+			position:relative;
+			height:100px;
+			clear:both;
+			padding: 20px 20px;
+		}
+		#footer ul li a{
+		        font-size:60px;
+		}
+		#footer a{
+		        color:black;
+		}
+		}
+	   	  
+	</style>
+   </head>
+   
+   <body>
+       <div id="wrapper">
+	   <div id="one">
+       <div id="header1">
+	        <h1>Kunwar Bindra</h1>
+		</div>
+       <div id="intro">
+	       <div class="box">
+	        <img src="images/KunwarBindra.jpg"/>
+		<div class="content">
+			<p>Hi... I'm Kunwar Bindra!</p>
+		       </div>
+	       </div>
+			<h2>Kunwarjeet Singh Bindra</h2>
+			<p>Under-Graduate Student
+			<br><br>Department Of Electronics And Communication Engineering
+			<br><br>Guru Tegh Bahadur Institute Of Technology, GGSIPU University
+			<br><br>If you guys wanna know more about me.. Scroll Down!
+			</p>
+	    </div>
+		</div>
+		<div id="two">
+		<div id="header2">
+	        <h1>About Me</h1>
+	   </div>
+	   <div id="about">
+	   <p>I am a B.Tech student at Guru Tegh Bahadur Institute Of Technology (affiliated to Guru Gobind Singh Indraprastha University) working 
+	      in the branch of Electronics And Communication Engineering. I am interested in the field of embedded systems and frontend web development.
+		  I have built some small computer simulated and hand-on projects of embedded systems using AVR Microcontroller. I completed my Class XII from 
+		  The Air Force School under Central Board Of Secondary Education in 2017.</p>
+	   
+	   </div>
+	   <div id="footer1"><ul>
+			<li><a href="https://www.facebook.com/kunwarjeetsingh.bindra"><i class="fab fa-facebook-square"></i></a></li>
+			<li><a href="https://www.instagram.com/the_kunwarantine_guy"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/kunwarjeet-bindra-043296167"><i class="fab fa-linkedin"></i></a></li>
+			<li><a href="https://twitter.com/Kunwarj26276993?s=08"><i class="fab fa-twitter-square"></i></a></li>
+			</ul></div>
+	   </div>
+	   <div id="three">
+	   <div id="header3">
+	        <h1>Resume</h1>
+	   </div>
+	   <div id="resume">
+	   <p><font size="4">
+       <i>Kunwarjeet Singh Bindra</i>
+	   <br><i>+91-7982368308 | kunwarjeetbindra@gmail.com</i>
+	   </font>
+	   </p>
+	   <h2><font face="arial">Education</font></h2>
+	   <ul type="square" align="justify"><font face="arial">
+	   <li><b>Guru Tegh Bahadur Institute Of Technology, Guru Gobind Singh Indraprastha University, New Delhi, India (2017-Present)</b></li>
+	   <br><li>Bachelor Of Technology (B.Tech) in Electronics And Communication Engineering</li>
+	   <br><li><b>The Air Force School, New Delhi, India (2004-2017)</b></li>
+	   </ul>
+	   <h2><font face="arial">Work Experience</font></h2>
+	   <ul type="square"><font face="arial">
+	   <li><b>Trulabz Technologies Pvt Ltd, New Delhi, India(01/2019-03/2019) -</b> Engineering Intern</li>
+	   <br><li><b>Delhi Technological University, New Delhi, India(06/2019-07/2019) -</b> Project Intern</li>
+	   </font>
+	   </ul>
+	   <h2><font face="arial">Technical Skills</font></h2>
+	   <ul type="square"><font face="arial">
+	   <li><b>Technology                 - </b>Embedded System Using AVR Microcontroller, Web Development</li>
+	   <br><li><b>Tools                      - </b>Proteus, Altium Designer, Microsoft Excel, Microsoft Powerpoint</li>
+	   <br><li><b>Programming Languages      - </b>HTML, CSS, C, Python, MATLAB</li>
+	   </font>
+	   </ul>
+	   <h2><font face="arial">Co-Curricular Activities</font></h2>
+	   <p>
+	   <i>Organized Line Following Robot Event in college Annual Festival(GATES 2019)</i>
+	   </p>
+	   <h2><font face="arial">Academic Events</font></h2>
+	   <ul type="square"><font face="arial">
+	   <li>Participated in Robo Race Event on IEEE Day(2017)</li>
+	   <br><li>Participated in hackCBS2.0 Hackathon(2019)</li>
+	   <br><li>Participated in IXI Summit Hackathon(2020)</li>
+	   </font>
+	   </ul>
+		   <br><a href="Resume.pdf" target="_blank"><b>Download PDF</b></a>
+	   </div>
+	   </div>
+	   <div id="four">
+	   <div id="header4">
+	        <h1>Projects</h1>
+	  </div>
+      <div id="box1">
+	  <img src="images/Altium.jpg"/>
+	  <div class="content1">
+			<h1>Arduino Board Schematic Using Altium Designer</h1>
+			</div>
+	  </div>
+	  <div id="box2">
+	  <img src="images/Calculatorgui.jpg"/>
+	  <div class="content2">
+			<h1>Calculator Using Tkinter</h1>
+			</div>
+	  </div>
+	  <div id="box3">
+	  <img src="images/Bicolourled.jpg"/>
+	  <div class="content3">
+			<h1>AVR Controlled Bicolour Double Seven Segment Display</h1>
+			</div>
+	  </div>
+	  <div id="box4">
+	  <img src="images/Website.jpg"/>
+	  <div class="content4">
+			<h1>My Website</h1>
+			</div>
+	  </div>
+	  </div>
+	   </div>
+	   <footer id="footer"><ul>
+			<li><a href="https://www.facebook.com/kunwarjeetsingh.bindra"><i class="fab fa-facebook-square"></i></a></li>
+			<li><a href="https://www.instagram.com/the_kunwarantine_guy"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/kunwarjeet-bindra-043296167"><i class="fab fa-linkedin"></i></a></li>
+			<li><a href="https://twitter.com/Kunwarj26276993?s=08"><i class="fab fa-twitter-square"></i></a></li>
+			</ul></footer>	
+	   
+			
+   </body>
+</html>
